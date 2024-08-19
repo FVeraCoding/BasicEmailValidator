@@ -1,4 +1,4 @@
-# Interactive Share Button.
+# Email Validator.
 
 [Ver el proyecto desplegado aquí](https://stalwart-sprite-f5a34a.netlify.app/)
 
