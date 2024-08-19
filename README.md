@@ -1,4 +1,4 @@
-# Email Validator.
+# Validating Email using JavaScript.
 
 [Ver el proyecto desplegado aquí](https://stalwart-sprite-f5a34a.netlify.app/)
 
@@ -13,7 +13,7 @@
 
 ## Descripción
 
-Este proyecto es una página web interactiva donde se valida el email a través de un formulario de una página web.
+Este proyecto es una página web interactiva donde se valida el email a través de un formulario.
 ## Capturas de Pantalla
 
 ### Vista de Escritorio
