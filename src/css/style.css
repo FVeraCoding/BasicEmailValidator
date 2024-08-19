@@ -1,0 +1,146 @@
+:root{
+    --DesaturatedRed: hsl(0, 36%, 70%);
+    --SoftRed: hsl(0, 93%, 68%);
+    --DarkGrayishRed: hsl(0, 30%, 87%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.principal{
+    padding-left: 15rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-size: cover;   
+}
+
+
+
+.logo{
+    cursor: pointer;
+}
+
+#titulo{
+    font-weight: 400;
+    letter-spacing: 2rem;
+    font-size: 8rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+#titulo span{
+    color: var(--DesaturatedRed);
+    font-weight: 200;
+}
+
+#descripcion{
+    line-height: 1.5;
+    
+    color: var(--DesaturatedRed);
+}
+
+@media (min-width:440px){ 
+    #descripcion{
+        padding-right: 31rem;
+    }
+}
+
+.imagen{
+    display: none;
+}
+
+
+@media (min-width:440px){ 
+    .imagen{
+        display: block;
+    }
+    .imagen img{
+        max-height: 72.5rem;
+    }
+}
+
+.formulario{
+    position: relative;
+    width: 50%;
+}
+
+#email{
+    border: solid 1px gray;
+    border-radius: 2.5rem;
+    padding: 1.5rem;
+    width: 100%;
+    font-family: "Josefin Sans";
+    color: var(--DesaturatedRed);
+}
+
+#enviar{
+    position: absolute;
+    right: 0.1rem;
+    top: 0.05rem;
+    padding: 1rem;
+    border-radius: 2.5rem;
+    border: none;
+    width: 8rem;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    cursor: pointer;
+}
+
+#email::placeholder{
+    font-family: "Josefin Sans";
+    color: var(--DarkGrayishRed);
+}  
+
+#enviar:hover{
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 80%,86%));
+    box-shadow: 0rem 0rem 0.3rem 0.3rem rgb(206, 206, 206);
+}
+
+#error-icono{
+    position: absolute;
+    right: 9rem;
+    top: 1rem;
+    display: none;
+}
+
+#error-texto{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    color: var(--SoftRed);
+    display: none;
+}
+
+#exito-texto{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    color: rgb(13, 255, 0);
+    display: none;
+}
+
+
+
+
